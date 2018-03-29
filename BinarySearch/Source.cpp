@@ -8,13 +8,13 @@ class BinarySearch
 public:
 	BinarySearch() = delete;
 
-	static std::optional<int> binarySearch(std::vector<int>& list, int item)
+	static std::optional<size_t> binarySearch(std::vector<int>& list, int item)
 	{
-		int low = 0;
-		int high = list.size() - 1;
+		size_t low = 0;
+		size_t high = list.size() - 1;
 
 		while (low <= high) {
-			int mid = (low + high) / 2;
+			size_t mid = (low + high) / 2;
 			int guess = list[mid];
 			if (guess == item) {
 				return std::make_optional(mid);
