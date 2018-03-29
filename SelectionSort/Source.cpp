@@ -1,12 +1,25 @@
 #include<vector>
+#include<iostream>
 
 class SelectionSort
 {
 public:
 	SelectionSort() = delete;
 
-	static std::vector<int> selectionSort(const std::vector<int>& list) {
-		throw std::logic_error("Function not yet implemented.");
+	static std::vector<int> selectionSort(std::vector<int>& list) {
+		size_t size = list.size();
+
+		auto newList = std::vector<int>();
+		newList.reserve(list.size());
+
+		for (int i = 0; i < size; i++) {
+			int smallest = findSmallest(list);
+			newList.push_back(list[smallest]);
+
+			list.erase(list.begin() + smallest);
+		}
+
+		return newList;
 	}
 
 	static int findSmallest(const std::vector<int>& list) {
@@ -26,8 +39,12 @@ public:
 
 int main(int argc, char *argv[]) {
 
-	std::vector<int> myList = { 1, 3, 5, 7, 9 };
+	std::vector<int> myList = { 5, 3, 6, 2, 10 };
+	
+	auto result = SelectionSort::selectionSort(myList);
 
+	for (const auto& item : result)
+		std::cout << item << ' ';
 
 	return 0;
 }
