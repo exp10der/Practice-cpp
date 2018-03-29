@@ -39,11 +39,11 @@ public:
 
 int main(int argc, char *argv[]) {
 
-	std::vector<int> myList = { 5, 3, 6, 2, 10 };
+	std::vector<int> myList = { 7, 3, 6, 2, 10 };
 	
 	auto result = SelectionSort::selectionSort(myList);
 
-	for (const auto& item : result)
+	for (const auto& item : result) //[2, 3, 6, 7, 10]
 		std::cout << item << ' ';
 
 	return 0;
