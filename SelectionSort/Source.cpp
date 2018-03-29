@@ -22,7 +22,7 @@ public:
 		return newList;
 	}
 
-	static int findSmallest(const std::vector<int>& list) {
+	static size_t findSmallest(const std::vector<int>& list) {
 		int smallest = list[0];
 		size_t smallestIndex = 0;
 		for (size_t i = 0; i < list.size(); i++) {
