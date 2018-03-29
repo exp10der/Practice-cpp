@@ -12,8 +12,8 @@ public:
 		auto newList = std::vector<int>();
 		newList.reserve(list.size());
 
-		for (int i = 0; i < size; i++) {
-			int smallest = findSmallest(list);
+		for (size_t i = 0; i < size; i++) {
+			size_t smallest = findSmallest(list);
 			newList.push_back(list[smallest]);
 
 			list.erase(list.begin() + smallest);
@@ -24,8 +24,8 @@ public:
 
 	static int findSmallest(const std::vector<int>& list) {
 		int smallest = list[0];
-		int smallestIndex = 0;
-		for (int i = 0; i < list.size(); i++) {
+		size_t smallestIndex = 0;
+		for (size_t i = 0; i < list.size(); i++) {
 			if (list[i] < smallest) {
 				smallest = list[i];
 				smallestIndex = i;
