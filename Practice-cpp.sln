@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelectionSort", "SelectionS
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RecursiveSum ", "RecursiveSum\RecursiveSum .vcxproj", "{1917805D-8B90-46DA-BDB1-F4B17516708A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RecursiveCount", "RecursiveCount\RecursiveCount.vcxproj", "{EE52E23F-EE1C-46B5-81A7-30C83B419D2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -27,6 +29,10 @@ Global
 		{1917805D-8B90-46DA-BDB1-F4B17516708A}.Debug|x64.Build.0 = Debug|x64
 		{1917805D-8B90-46DA-BDB1-F4B17516708A}.Release|x64.ActiveCfg = Release|x64
 		{1917805D-8B90-46DA-BDB1-F4B17516708A}.Release|x64.Build.0 = Release|x64
+		{EE52E23F-EE1C-46B5-81A7-30C83B419D2F}.Debug|x64.ActiveCfg = Debug|x64
+		{EE52E23F-EE1C-46B5-81A7-30C83B419D2F}.Debug|x64.Build.0 = Debug|x64
+		{EE52E23F-EE1C-46B5-81A7-30C83B419D2F}.Release|x64.ActiveCfg = Release|x64
+		{EE52E23F-EE1C-46B5-81A7-30C83B419D2F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
