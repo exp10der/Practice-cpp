@@ -9,9 +9,6 @@ int main(int argc, char *argv[]) {
 		if (arr.size() == 0)
 			return 0;
 
-		if (arr.size() == 1)
-			return 1;
-
 		arr.pop_back();
 
 		return 1 + count(arr);
