@@ -12,7 +12,9 @@ int main(int argc, char *argv[]) {
 		auto item = arr.back();
 		arr.pop_back();
 
-		return item > max(arr) ? item : max(arr);
+		auto resulFn = max(arr);
+
+		return item > resulFn ? item : resulFn;
 	};
 
 	auto list = std::vector<int>{ 1, 2, 3, 4, 5 };
