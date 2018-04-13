@@ -45,8 +45,8 @@ public:
 
 int main()
 {
-	auto handler1 = std::make_shared<handler>(concrete_handler1{});
-	auto handler2 = std::make_shared<handler>(concrete_handler2{});
+	std::shared_ptr<handler> handler1 = std::make_shared<concrete_handler1>(concrete_handler1{});
+	std::shared_ptr<handler> handler2 = std::make_shared<concrete_handler2>(concrete_handler2{});
 
 	handler1->set_successor(handler2);
 	handler1->handle_request(2);
