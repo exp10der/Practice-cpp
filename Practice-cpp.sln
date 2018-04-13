@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RecursiveCount", "Recursive
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RecursiveMax", "RecursiveMax\RecursiveMax.vcxproj", "{62DA4B50-F086-43BE-9DB5-D1F2958A3E2E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.vcxproj", "{43A29FBC-B908-4F03-8DAC-453DBF92CB42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -39,6 +41,10 @@ Global
 		{62DA4B50-F086-43BE-9DB5-D1F2958A3E2E}.Debug|x64.Build.0 = Debug|x64
 		{62DA4B50-F086-43BE-9DB5-D1F2958A3E2E}.Release|x64.ActiveCfg = Release|x64
 		{62DA4B50-F086-43BE-9DB5-D1F2958A3E2E}.Release|x64.Build.0 = Release|x64
+		{43A29FBC-B908-4F03-8DAC-453DBF92CB42}.Debug|x64.ActiveCfg = Debug|x64
+		{43A29FBC-B908-4F03-8DAC-453DBF92CB42}.Debug|x64.Build.0 = Debug|x64
+		{43A29FBC-B908-4F03-8DAC-453DBF92CB42}.Release|x64.ActiveCfg = Release|x64
+		{43A29FBC-B908-4F03-8DAC-453DBF92CB42}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
