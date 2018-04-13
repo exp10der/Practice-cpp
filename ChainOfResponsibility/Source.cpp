@@ -1,10 +1,11 @@
 #include <string>
 #include <iostream>
+#include <memory>
 
 class handler
 {
 public:
-	virtual void set_successor(handler* handler) { this->handler_ = handler; }
+	virtual void set_successor(const std::shared_ptr<handler>& handler) { this->handler_ = handler; }
 
 	virtual void handle_request(const int condition)
 	{
@@ -14,7 +15,7 @@ public:
 
 	virtual ~handler() = default;
 private:
-	handler * handler_ = nullptr;
+	std::shared_ptr<handler> handler_ = nullptr;
 };
 
 class concrete_handler1 : public handler
@@ -44,13 +45,12 @@ public:
 
 int main()
 {
-	handler* h1 = new concrete_handler1{};
-	handler* h2 = new concrete_handler2{};
-	h1->set_successor(h2);
-	h1->handle_request(2);
+	auto handler1 = std::make_shared<handler>(concrete_handler1{});
+	auto handler2 = std::make_shared<handler>(concrete_handler2{});
 
-	delete h1;
-	delete h2;
+	handler1->set_successor(handler2);
+	handler1->handle_request(2);
+
 
 	return 0;
 }
